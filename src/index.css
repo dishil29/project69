@@ -1,0 +1,393 @@
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Body Styling*/
+body{
+  max-width: 1200px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  background-color: wheat;
+  color: brown;
+  position: sticky;
+  top: 0;
+}
+
+.nav .navHeading{
+  padding: 20px 15px;
+  margin-right: 250px;
+
+}
+
+.nav .navPages ul{
+  display: flex;
+  list-style-type: none;
+  margin-left: 30%;
+}
+
+.nav .navPages ul li{
+  min-width: 150px;
+  text-decoration: none;
+  text-align: right;
+}
+
+.nav .navPages ul li a{
+  color: brown;
+  text-decoration: none;
+  padding: 20px 12px;
+}
+
+/* Home Page styling */
+
+.home{
+  display: flex;
+  margin: 150px 5%;
+  padding: 100px auto;
+  margin-bottom: 80px;
+}
+
+.home .homeIntro{
+  min-width: 50%;
+}
+
+.home .photo{
+  min-width: 40%;
+}
+.home .photo img{
+  max-height: 250px;
+  border-radius: 200px;
+}
+
+.home .homeIntro .homeP1{
+  font-family: sans-serif;
+  font-size: 37px;
+}
+
+.home .homeIntro .homeP2{
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.home .homeIntro .homeP2 span{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 37px;
+  color: brown;
+}
+
+.home .homeIntro .shortIntro{
+  text-align: left;
+  padding: 12px 20px;
+  font-size:  22px;
+  margin-left: 12px;
+}
+
+/*Footer Styling*/
+
+.footer{
+  display: flex;
+  margin-bottom: 0;
+  background-color: wheat;
+  color: brown;
+}
+.footer .footName{
+  margin-right: 55%;
+  margin-left: 15px;
+  padding: 7px 40px;
+  padding-top: 10px;
+}
+.footer .social span{
+  max-height: 30px;
+  max-width: 30px;
+  padding: 7px 25px;
+}
+.footer .social .Insta img{
+  max-width: 43px;
+  max-height: 43px;
+}
+.footer .social .Fb img{
+  max-width: 32px;
+  max-height: 32px;
+}
+.footer .social .Mail img{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* About page styling*/
+.about{
+  margin-bottom: 10%;
+}
+.about h2{
+  color: brown;
+  padding: 30px;
+  margin: 30px auto;
+}
+.about .intro{
+  display: flex;
+}
+.about .intro .img{
+  padding: 20px 45px;
+}
+
+.about .intro .img img{
+  max-height: 170px;
+}
+.about .intro article{
+  padding-left: 30px;
+  font-size: 18px;
+  min-width: 60%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+/* Projects Page Styling */
+
+.Project h2{
+  color: brown;
+}
+
+.Project .item1{
+  display: flex;
+  margin: 35px auto;
+  max-width: 90%;
+}
+.Project .item1 div{
+  margin-left: 10%;
+  margin-right: 30px;
+}
+.Project .item1 p{
+  min-width: 60%;
+}
+.Project .item1 div img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.Project .item2{
+  display: flex;
+  margin: 35px auto;
+  max-width: 80%;
+}
+.Project .item2 div{    
+  margin-right: 15%;
+  margin-left: 30px;
+}
+.Project .item2 p{
+  min-width: 70%;
+  margin-left: 10%;
+}
+.Project .item2 div img{
+  max-width: 200px;
+  max-height: 200px;
+}
+.Project p a{
+  text-decoration: none;
+  color: brown;
+}
+.Skills {
+  margin-bottom: 20px;
+}
+
+.Skills h3{
+  color: brown;
+  font-size: 22px;
+}
+.Skills p{
+  min-width: 80%;
+  margin: auto;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/*Contact page styles*/
+.contact h2{
+  color: brown;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.contact a{
+  color: brown;
+  text-decoration: none;
+}
+.contact {
+  margin-bottom: 30%;
+}
+
+/* Hover Effects */
+.nav .navPages ul li :hover{
+  background-color: rgb(209, 182, 113);
+  font-size: 1.1em;
+}
+
+.nav .navPages ul li :active{
+  background-color: brown;
+  color: wheat;
+}
+.Project p span :hover{
+  color: goldenrod;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+.contact p span :hover{
+  color: goldenrod;
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+/*Media Queries for a Responsive web-page*/
+@media screen and (max-width:1100px) {
+  .nav .navPages ul{
+    margin-left: 0;
+  }
+  .footer .footName{
+    margin-right: 30%;
+  }
+  .footer{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width:1027px) {
+  .nav .navHeading{
+    margin-right: 150px;
+  }
+  .nav .navPages ul li{
+    min-width: 100px;
+    text-align: left;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .home {
+    margin-top: 80px;
+  }
+  .Project .item1 div{
+    margin-left: 0;
+  }
+  .Project .item2 p{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:735px) {
+  .Project .item1 {
+    flex-wrap: wrap;
+    /*text-align: center;*/
+    justify-content: space-around;
+  }
+  .Project .item2{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .Project .item2 p{
+    min-width: 60%;
+    margin-left: 0%;
+  }
+  .footer .footName{
+    margin-right: 20%;
+  }
+  .nav .navHeading {
+    margin-right: 70px;
+  }
+  .about .intro article{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:650px) {
+  .nav{
+    flex-wrap: wrap;
+    justify-content:  center;
+  }
+  .nav .navHeading {
+    text-align: center;
+    min-width: 60%;
+    margin: 12px auto;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  .nav .navPages ul{
+    padding-left: 0;
+  }
+  .nav .navPages ul li {
+    text-align: center;
+  }
+  
+    .home .photo img{
+      max-height: 150px;
+      border-radius: 150px;
+    }
+    
+    .home .homeIntro .homeP1{
+      font-size: 27px;
+    }
+    
+    .home .homeIntro .homeP2{
+      font-size: 20px;
+    }
+    
+    .home .homeIntro .homeP2 span{
+      font-size: 27px;
+    }
+    
+    .home .homeIntro .shortIntro{
+      font-size:  16px;
+    }
+    .about .intro .img {
+      padding-right: 0px;
+      padding-left: 15px;
+    }
+    .footer .footName{
+      margin-right: 0;
+    }
+}
+@media screen and (max-width:506px) {
+  .about .intro{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footHolder .footer .footName{
+    font-size: 0px;
+    max-width: 0px;
+    padding: 0 0;
+  }
+  .footHolder .footer{
+    justify-content: center;
+  }
+  .footer .social{
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width:440px) {
+  .home{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .nav .navHeading{
+    min-width: 80%;
+  }
+  .nav .navPages ul {
+    min-width: 80px;
+    margin-right: 0px;
+  }
+  .nav .navPages ul li a{
+    padding: 0px 10px;
+  }
+  .nav .navPages ul li{
+    min-width: 60px;
+    max-width: 80px;
+    margin:0 0 ;
+    font-size: 14px;
+  }
+  .footHolder .footer .social span{
+    padding: 12px 15px;
+  }
+}
